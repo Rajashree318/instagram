@@ -1,0 +1,48 @@
+<div class="col-md-4 offset-4 card mt-4">
+    <div class="card-body">
+        <form action="" #form="ngForm" (ngSubmit)="submit(form)">
+            <h1 class="display-6">login form</h1>
+            <div class="form-group">
+                <label for="name">username </label>
+                    <input
+                    
+                    ngModel
+                    #username="ngModel"
+                    name="email" required
+                    minlength="3"
+                 
+                   
+                    
+                    type="text" class="form-control display-6" id="email" placeholder=" enter username">
+               </div>
+               <div *ngIf="username.invalid && username.touched"
+               class="text-danger alert alert-danger m-2">
+               
+
+               <p *ngIf ="username.errors.required"> username is required</p>
+               <p *ngIf ="username.errors.minlength">user name should be maximum 3 characters</p>
+              
+              </div>
+               <div class="form-group">
+                    <label for="password">password </label>
+                        <input
+                        ngModel
+                        #password="ngModel"
+                        name="password"
+                        required
+                        minlength="8"
+                        
+                        type="password" class="form-control display-6" id="password" placeholder=" enter password">
+                   </div>
+                   <div *ngIf="password.invalid && password.touched" class="text-danger alert alert-danger m-2">
+                       <p *ngIf="password.errors.required">password is mandetory</p>
+                       <p *ngIf="password.errors.minlength">password should be minimum 8 letters</p>
+
+                   </div>
+                   <div class="form-group">
+                        <button class="bg-success btn-block">submit</button>
+                           
+                       </div>
+        </form>
+    </div>
+</div>

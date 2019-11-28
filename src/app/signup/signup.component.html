@@ -1,0 +1,31 @@
+<div class="col-md-3 signupfrom offset-4  text-center  ">
+
+    <h1>Instagram</h1>
+    <p>signup to see photos and videos</p>
+    <button class="btn btn-primary">login with facebook</button>
+    <p>or</p>
+    <form action="" #f="ngForm" (ngSubmit)="submit(f)">
+        <div class="form-group">
+            <input  ngModel 
+            name="email"
+            required
+            type="text" class="form-control mt-2 mb-2" placeholder="moblile number or email">
+            <input
+            ngModel
+            name="fullname"
+             type="text" class="form-control mt-2 mb-2" placeholder="full name">
+            <input
+            ngModel
+            name="username"
+             type="text" class="form-control mt-2 mb-2" placeholder="username">
+            <input
+            ngModel
+            name="password"
+             type="password" class="form-control mt-2 mb-2" placeholder="enter password">
+            <button class="btn btn-primary btn-block"[disabled]="!f.value">signup</button>
+
+        </div>
+    </form>
+
+
+</div>
