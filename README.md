@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Udemyangular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
@@ -29,3 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # instagram
 >>>>>>> 69efa43e82a53a9dd4eedfc89f8916212b108750
+=======
+# instagram
+  this is a  instagram login page using firebase for storing data in database and rendering data from local storage
+>>>>>>> 7e5a6e7cbd1772963ba141a21f047f38f3e9ae61
